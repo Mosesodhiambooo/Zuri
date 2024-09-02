@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html media="screen">
+<head>
+<title>Zuri Online Grocery</title>
+<link rel="stylesheet" href="Grocery.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header>
+    <!-- Header content -->
+  </header>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img src="pic/logo.lnk" width="160" height="50" alt="">
+      </a>
+
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="Grocery.html" class="logo">
+          <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="Grocery.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="MoGrocery.html" class="navbar-link">Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Gabout.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Glogin.html" class="navbar-link">Contact</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </button>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Wishlist</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+            </button>
+          </li>
+
+          <li>
+            <button class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+            </button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="image-holder">
+    <img class="background-img" src="pic/bc.png" width="100%" height="600">
+    <h1 id="caption-1">ZURI ONLINE GROCERY</h1>
+
+    <!-- Offer Section inside the background image -->
+    <div class="offer-section">
+      <p class="offer-text">Up to <span class="offer-highlight">30% OFF</span> on Selected Items!</p>
+      <a href="MoGrocery.html" class="shop-now-btn">Shop Now</a>
+    </div>
+  </div>
+
+  <h1 id="pop-cat">POPULAR CATEGORIES</h1>
+  <hr width="1300">
+
+  <section>
+    <div class="featured-wrapper">
+      <div class="product-container">
+        <p class="cat-text">Dairy Products</p>
+        <img src="pic/milk.png" alt="">
+        <div class="btn-container">
+          <a href="MoGrocery.html?tab=bakery" class="view-more-btn">Explore All</a>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <p class="cat-text">Cold Meat</p>
+        <img src="pic/Cold meat.png" alt="">
+        <div class="btn-container">
+          <a href="MoGrocery.html" class="view-more-btn">Explore All</a>
+        </div>
+      </div>
+
+      <div class="product-container">
+        <p class="cat-text">Fruit and Vegetables</p>
+        <img src="pic/frvegiess.jpg" alt="">
+        <div class="btn-container">
+          <a href="MoGrocery.html" class="view-more-btn">Explore All</a>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="section special">
+    <div class="container">
+
+      <div class="special-banner" style="background-image: url('pic/offer-removebg-preview.png')">
+        <h2 class="h3 banner-title">Offer Alert...</h2>
+
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+      </div>
+
+      <div class="special-product">
+
+        <h2 class="h2 section-title">
+          <span class="text">Incredible Deals Now: Save Up to 40% on Essentials!</span>
+
+          <span class="line"></span>
+        </h2>
+
+        <ul class="has-scrollbar">
+
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+
+              <figure class="card-banner">
+                <img src="pic/maziwa-removebg-preview.png" width="312" height="350" loading="lazy"
+                  alt="Running Sneaker Shoes" class="image-contain">
+
+                <div class="card-badge">-30%</div>
+
+                <ul class="card-action-list">
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+
+                </ul>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">
+                  <a href="#">Fresh Milk</a>
+                </h3>
+
+                <data class="card-price" value="170.85">Ksh 170/= <del>Ksh 159/=</del></data>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+
+              <figure class="card-banner">
+                <img src="pic/mchele.png" width="312" height="350" loading="lazy"
+                  alt="Leather Mens Slipper" class="image-contain">
+                  <div class="card-badge">-30%</div>
+
+                <ul class="card-action-list">
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+
+                </ul>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">
+                  <a href="#">Pishori Rice /kg</a>
+                </h3>
+
+                <data class="card-price" value="170.85">Ksh 170/= <del>Ksh 159/=</del></data>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+
+              <figure class="card-banner">
+                <img src="pic/istockphoto-1128288096-1024x1024-removebg-preview.png" width="312" height="350" loading="lazy"
+                  alt="Simple Fabric Shoe" class="image-contain">
+
+                <div class="card-badge">New</div>
+
+                <ul class="card-action-list">
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+
+                </ul>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">
+                  <a href="#">Tilapia</a>
+                </h3>
+
+                <data class="card-price" value="170.85">Ksh 170/= <del>Ksh 159/=</del></data>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="product-item">
+            <div class="product-card" tabindex="0">
+
+              <figure class="card-banner">
+                <img src="pic/Household-removebg-preview.png" width="312" height="350" loading="lazy"
+                  alt="Air Jordan 7 Retro " class="image-contain">
+
+                <div class="card-badge"> -25%</div>
+
+                <ul class="card-action-list">
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-1">
+                      <ion-icon name="cart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-2">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-3">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                  </li>
+
+                  <li class="card-action-item">
+                    <button class="card-action-btn" aria-labelledby="card-label-4">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                  </li>
+
+                </ul>
+              </figure>
+
+              <div class="card-content">
+
+                <h3 class="h3 card-title">
+                  <a href="#">Households</a>
+                </h3>
+
+                <data class="card-price" value="170.85">Ksh 170/= <del>Ksh 159/=</del></data>
+
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+    <section class="section service">
+      <div class="container">
+  
+        <ul class="service-list">
+  
+          <li class="service-item">
+            <div class="service-card">
+  
+              <div class="card-icon">
+                <img src="pic/elivery.jpg" width="53" height="28" loading="lazy" alt="Service icon">
+              </div>
+  
+              <div>
+                <h3 class="h4 card-title">Free Delivery</h3>
+  
+                <p class="card-text">
+                  All orders over <span>$150</span>
+                </p>
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="service-item">
+            <div class="service-card">
+  
+              <div class="card-icon">
+                <img src="pic/Delivery.jpg" width="43" height="35" loading="lazy" alt="Service icon">
+              </div>
+  
+              <div>
+                <h3 class="h4 card-title">Quick Payment</h3>
+  
+                <p class="card-text">
+                  100% secure payment
+                </p>
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="service-item">
+            <div class="service-card">
+  
+              <div class="card-icon">
+                <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+              </div>
+  
+              <div>
+                <h3 class="h4 card-title">Free Returns</h3>
+  
+                <p class="card-text">
+                  Money back in 30 days
+                </p>
+              </div>
+  
+            </div>
+          </li>
+  
+          <li class="service-item">
+            <div class="service-card">
+  
+              <div class="card-icon">
+                <img src="" width="40" height="40" loading="lazy" alt="Service icon">
+              </div>
+  
+              <div>
+                <h3 class="h4 card-title">24/7 Support</h3>
+  
+                <p class="card-text">
+                  Get Quick Support
+                </p>
+              </div>
+  
+            </div>
+          </li>
+  
+        </ul>
+  
+      </div>
+    </section>
+  
+
+    <section class="testimonial-container">
+      <h2 class="testimonial-heading">What Our Customers Say</h2>
+      <div class="testimonial-carousel">
+          <div class="testimonial">
+              <img src="pic/woman-7175038_1920.jpg" alt="" class="testimonial-img">
+              <p>"Fantastic service—always fresh and on time!"</p>
+              <h3>Faith Alicia</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/man-4568761_1920.jpg" alt="" class="testimonial-img">
+              <p>"The best online grocery experience I've had!"</p>
+              <h3>Chris Emmanuel</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/black-man-4699517_1920.jpg" alt="" class="testimonial-img">
+              <p>"Reliable and fast with top-quality products."</p>
+              <h3>Joshua Otieno</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/black-man-4699517_1920.jpg" alt="" class="testimonial-img">
+              <p>"Effortless shopping and great customer service!"</p>
+              <h3>Edwards David</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/african-woman-1580545_1920.jpg" alt="" class="testimonial-img">
+              <p>"Always a pleasure to shop here, highly recommend!"</p>
+              <h3>Faith Akinyi</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/african-woman-1580545_1920.jpg" alt="" class="testimonial-img">
+              <p>"Great selection and speedy delivery every time."</p>
+              <h3>Jecinter Atieno</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/man-4568761_1920.jpg" alt="" class="testimonial-img">
+              <p>"Top-notch service and unbeatable freshness!"</p>
+              <h3>Maurice Ochieng</h3>
+              <span>Customer</span>
+          </div>
+          <div class="testimonial">
+              <img src="pic/black-woman-5505592_1920.jpg" alt="" class="testimonial-img">
+              <p>"Excellent variety and outstanding service!"</p>
+              <h3>Lorraine Akoth</h3>
+              <span>Customer</span>
+          </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+      <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </section>
+
+  <!-- Sticky Social Media Links -->
+  <div class="social-media">
+      <a href="#" class="facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+      <!-- <a href="#" class="linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> -->
+  </div>
+
+
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+<!-- 
+          <a href="#" class="logo">
+            <img src="pic/logo.lnk" width="160" height="50" alt="">
+          </a> -->
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">Contact Us</p>
+            </li>
+
+            <li>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  Nairobi, Kenya
+                </span>
+              </address>
+            </li>
+
+            <li>
+              <a href="tel:+254 7343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+254 743673257</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="zurionlinegrocery@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">footcap@gma.com</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <li>
+              <p class="footer-list-title">My Account</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </li>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon - Tue:</th>
+
+                  <td class="table-data">8AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">8AM - 7PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">7AM - 12PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 8PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">Closed</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Authoritatively morph 24/7 potentialities with error-free partnerships.
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">mosesodhiambo</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+      <script>
+        let currentSlide = 0;
+        const slideInterval = 7000; // 7 seconds
+        const slides = document.querySelectorAll('.testimonial');
+        const totalSlides = slides.length;
+
+        function moveSlide(step) {
+            currentSlide = (currentSlide + step + totalSlides) % totalSlides;
+            const offset = -currentSlide * 100;
+            document.querySelector('.testimonial-carousel').style.transform = `translateX(${offset}%)`;
+        }
+
+        function autoSlide() {
+            moveSlide(1);
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
+        document.querySelector('.next').addEventListener('click', () => moveSlide(1));
+
+        // Start automatic sliding
+        let slideIntervalId = setInterval(autoSlide, slideInterval);
+
+        // Reset interval on manual slide change
+        function resetAutoSlide() {
+            clearInterval(slideIntervalId);
+            slideIntervalId = setInterval(autoSlide, slideInterval);
+        }
+
+        document.querySelector('.prev').addEventListener('click', resetAutoSlide);
+        document.querySelector('.next').addEventListener('click', resetAutoSlide);
+
+        'use strict';
+/**
+ * navbar toggle
+ */
+
+const overlay = document.querySelector("[data-overlay]");
+const navOpenBtn = document.querySelector("[data-nav-open-btn]");
+const navbar = document.querySelector("[data-navbar]");
+const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+
+const navElems = [overlay, navOpenBtn, navCloseBtn];
+
+for (let i = 0; i < navElems.length; i++) {
+  navElems[i].addEventListener("click", function () {
+    navbar.classList.toggle("active");
+    overlay.classList.toggle("active");
+  });
+}
+/**
+ * header & go top btn active on page scroll
+ */
+
+const header = document.querySelector("[data-header]");
+const goTopBtn = document.querySelector("[data-go-top]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 80) {
+    header.classList.add("active");
+    goTopBtn.classList.add("active");
+  } else {
+    header.classList.remove("active");
+    goTopBtn.classList.remove("active");
+  }
+});
+    </script>
+    </footer>
+  </body>
+</html>
+
